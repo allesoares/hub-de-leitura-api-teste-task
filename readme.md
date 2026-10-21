@@ -54,7 +54,7 @@ npm test
 ### Executar testes com a interface do Cypress (modo interativo)
 
 ```bash
-npm run cypress:open
+npm run cypress open
 ```
 
 Isso abrirá a interface do Cypress onde você pode:

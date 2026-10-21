@@ -1,0 +1,15 @@
+{
+  "title": "Livro de teste Cypress",
+  "author": "Autor de teste Cypress",
+  "description": "Livro criado pela suíte automatizada do catálogo.",
+  "category": "Testes de API",
+  "isbn": "",
+  "editor": "Editora QA",
+  "language": "Português",
+  "publication_year": 2020,
+  "pages": 180,
+  "format": "Físico",
+  "total_copies": 3,
+  "available_copies": 3,
+  "cover_image": ""
+}

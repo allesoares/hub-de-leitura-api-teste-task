@@ -24,6 +24,33 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+Cypress.Commands.add('cadastrarLivro', (
+    titulo, autor, descricao, categoria, isbn, editora, idioma,
+    anoPublicacao, paginas, formato, totalExemplares, exemplaresDisponiveis,
+    imagemCapa, token
+) => {
+    return cy.api({
+        method: 'POST',
+        url: 'books',
+        headers: { Authorization: token },
+        body: {
+            title: titulo,
+            author: autor,
+            description: descricao,
+            category: categoria,
+            isbn: isbn,
+            editor: editora,
+            language: idioma,
+            publication_year: anoPublicacao,
+            pages: paginas,
+            format: formato,
+            total_copies: totalExemplares,
+            available_copies: exemplaresDisponiveis,
+            cover_image: imagemCapa
+        }
+    })
+})
+
 Cypress.Commands.add('geraToken', (email, senha) => {
     cy.request({
         method: 'POST', 

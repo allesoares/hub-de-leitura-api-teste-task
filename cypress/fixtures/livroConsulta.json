@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "title": "Dom Casmurro",
+  "author": "Machado de Assis",
+  "category": "Ficção Clássica",
+  "isbn": "978-85-359-0277-5",
+  "editor": "Companhia das Letras",
+  "language": "Português",
+  "publication_year": 2008,
+  "pages": 256,
+  "format": "Físico",
+  "cover_image": "dom-casmurro.png"
+}
